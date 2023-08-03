@@ -16,3 +16,12 @@ message CreateMailRequest {
 message CreateMailResponse {
     MailBox mailbox = 1;
 }
+
+message ReadMailRequest {
+    string email = 1;
+}
+
+message ReadMailResponse {
+    MailBox mailbox = 1;
+}
+
