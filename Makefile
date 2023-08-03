@@ -7,4 +7,4 @@ createdb:
 dropdb:
 	docker exec -it learn-mail dropdb mail_box
 
-.PHONY: postgres
+.PHONY: postgres createdb dropdb
