@@ -25,3 +25,11 @@ message ReadMailResponse {
     MailBox mailbox = 1;
 }
 
+message DeleteMailRequest {
+    string email = 1;
+}
+
+message DeleteMailResponse {
+    bool success = 1;
+}
+
