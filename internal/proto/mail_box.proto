@@ -33,3 +33,8 @@ message DeleteMailResponse {
     bool success = 1;
 }
 
+service BookService {
+    rpc CreateMail(CreateMailRequest) returns (CreateMailResponse) {}
+    rpc GetMail(ReadMailRequest) returns (ReadMailResponse) {}
+    rpc DeleteMail(DeleteMailRequest) returns (DeleteMailResponse) {}
+}
