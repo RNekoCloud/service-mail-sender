@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./proto";
+
+message MailBox {
+    string email = 2;
+    string token = 3;
+}
+
+message CreateMailRequest {
+    MailBox mailbox = 1;
+}
+
+message CreateMailResponse {
+    MailBox mailbox = 1;
+}
